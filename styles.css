@@ -1,0 +1,262 @@
+/****************************************
+*** UNIVERSAL STYLES   ******************
+****************************************/
+
+* {
+	font-family: 'Merriweather', serif !important;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 30px 0 10px 0;
+}
+
+legend {
+	font-size: 20px;
+	padding: 30px 0 10px 0;
+}
+
+ul {
+	list-style: none;
+}
+
+/****************************************
+/*** MAIN SECTION STYLES   **************
+****************************************/
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #2d3945;
+	font-size: 1.5em;
+	color: #fff;
+
+	line-height: 70px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	text-align: center;
+	font-size: 1em;
+}
+
+.section-1-top {
+	width: 100%;
+	height: 134px;
+	font-size: 0.6em;
+	margin: 0 0 3px 0;
+	padding: 0;
+	border-bottom: solid 4px #2d3945;
+}
+
+.section-1-top p {
+	font-size: 1.25em;
+	color: #9da3a8;
+	margin-top: 15px;
+	padding: 0 10px;
+	font-weight: normal;
+}
+
+.section-2-contact {
+	width: 100%;
+	height: auto;
+	margin: 3px 0 0 0;
+	padding: 0 0 30px 0;
+	border-top: solid 2px #2d3945;
+	border-bottom: solid 2px #2d3945;
+	text-align: left;
+}
+
+.section-3-newsletter {
+	text-align: left;
+}
+
+footer {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-style: italic;
+	color: #9da3a8;
+}
+
+/****************************************
+*** FORM STYLES   ***********************
+****************************************/
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.section-2-contact label {
+	display: inline-block;
+	color: #55687a;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+	width: 100%;
+	height: 50px;
+	clear: both;
+	border: none;
+	border-radius: 3px;
+	background: #eff0f1;
+	line-height: 50px;
+	padding: 0 0 0 15px;
+	color: #a8adb2;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin-right: 12px;
+}
+
+ul.newsletter-checkboxes li,
+ul.newsletter-formats li {
+	height: 25px;
+	color: #a8adb2;
+}
+
+ul.newsletter-checkboxes,
+ul.newsletter-formats {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+label[for="zip"],
+input[name="zip"] {
+	display: inline-block;
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	background: #eff0f1;
+	color: #a8adb2;
+	border: none;
+	border-radius: 3px;
+	margin: 10px 0 30px 0;
+	resize: none;
+}
+
+input[type="submit"] {
+	width: 100%;
+	height: 60px;
+	background: #4ebbb5;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	line-height: 60px;
+	font-weight: bold;
+	cursor: pointer;
+    -moz-transition: background-color 200ms ease-in-out;
+    /* WebKit */
+    -webkit-transition: background-color 200ms ease-in-out;
+    /* Opera */
+    -o-transition: background-color 200ms ease-in-out;
+    /* Standard */
+    transition: background-color 200ms ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background: #9ffffa;
+}
+
+/* begin - placeholder styles */
+::-webkit-input-placeholder {
+	color: #b8bdc0;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	font-style: italic;	
+	font-size: 14px;
+}
+::-moz-placeholder {
+	color: #b8bdc0;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	font-style: italic;	
+	font-size: 14px;
+}
+:-ms-input-placeholder {
+	color: #b8bdc0;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	font-style: italic;	
+	font-size: 14px;
+}
+:-moz-placeholder {
+	color: #b8bdc0;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	font-style: italic;	
+	font-size: 14px;
+}
+/* end - placeholder styles */
+
+
+/****************************************
+*** LARGER SCREEN STYLES   **************
+****************************************/
+
+@media (min-width: 768px) {
+
+	#wrapper {
+		width: 80%;
+	}
+
+	/* place labels inline with their form field */
+	label {
+		width: 25%;
+		display: inline-block;
+		clear: none;
+		line-height: 50px;
+	}
+
+	/* extend labels for section 3 (newsletter) */
+	.section-3-newsletter label {
+		width: 90%;
+	}
+
+	/* place input fields inline with their label */
+	input[type="text"], input[type="email"], input[type="tel"], select {
+		width: 70%;
+		clear: none;
+		display: inline-block;
+	}
+
+	label[for="zip"] {
+		width: 25%;
+	}
+
+	input[name="zip"] {
+	    width: 33%;
+	    margin-right: 0;
+	}
+
+	ul.newsletter-checkboxes {
+		margin-top: -15px;
+		margin-bottom: 10px;
+	}
+
+	ul.newsletter-formats {
+		margin-top: -10px;
+		margin-bottom: 10px;
+	}
+
+}
